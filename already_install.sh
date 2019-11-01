@@ -10,5 +10,6 @@ else
 	sudo echo "gesture swipe left 3 setLeftinit" >> /etc/libinput-gestures.conf
 	sudo echo "gesture swipe right 3 setRightinit" >> /etc/libinput-gestures.conf
 fi
-libinput-gestures-setup autostart
 libinput-gestures-setup start
+sudo cp cronSet.sh /usr/bin/cronSet
+./cronSet.sh

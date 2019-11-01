@@ -26,5 +26,6 @@ if [ "$1" == "--inverted" ]; then
 	sudo echo "gesture swipe right 3 setLeftinit" >> /etc/libinput-gestures.conf
 	gesture swipe right 3 setLeftinit
 fi
-libinput-gestures-setup autostart
 libinput-gestures-setup start
+sudo cp cronSet.sh /usr/bin/cronSet
+./cronSet.sh

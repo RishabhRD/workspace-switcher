@@ -51,3 +51,7 @@ To restart this:
     libinput-gestures-setup restart
 To start this:
     libinput-gestures-setup start
+
+
+To add auto start for current user(except on which you started):
+    cronSet
