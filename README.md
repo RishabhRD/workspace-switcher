@@ -28,7 +28,8 @@ Install this software:
 
     git clone https://github.com/RishabhRD/workspace-switcher.git
     cd workspace-switcher
-If `libinput-gestures` is not installed:
+**If `libinput-gestures` is not installed:**
+
     ./install.sh
 
 **If `libinput-gestures` is already installed(and you are using its configuration file):
