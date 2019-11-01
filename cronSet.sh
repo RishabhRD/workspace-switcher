@@ -1,4 +1,4 @@
 crontab -l > ~/.mycron
-echo "@reboot libinput-gesture-setup start &" >> ~/.mycron
+echo "@reboot libinput-gestures-setup start &" >> ~/.mycron
 crontab ~/.mycron
 rm ~/.mycron
