@@ -1,6 +1,5 @@
 sudo gpasswd -a $USER input
 sudo cp ./setLeft /usr/bin/setLeft
-sudo cp ./setRight /usr/bin/setRight
 sudo g++ setLeft.cc -o /usr/bin/setLeftinit
 sudo g++ setRight.cc -o /usr/bin/setRightinit
 if [ "$1" == "--inverted" ]; then
@@ -11,5 +10,8 @@ else
 	sudo echo "gesture swipe right 3 setRightinit" >> /etc/libinput-gestures.conf
 fi
 libinput-gestures-setup start
+sudo cp ./init_server.sh /usr/bin/startSwitcher
 sudo cp cronSet.sh /usr/bin/winSet
+sudo chmod 777 /usr/bin/winSet
+sudo chmod 777 /usr/bin/startSwitcher
 ./cronSet.sh

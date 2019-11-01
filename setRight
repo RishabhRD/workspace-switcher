@@ -1,2 +1,0 @@
-x=$(xdotool get_desktop)
-xdotool set_desktop $((x+1))

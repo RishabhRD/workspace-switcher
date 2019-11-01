@@ -1,4 +1,4 @@
 crontab -l > ~/.mycron
-echo "@reboot libinput-gestures-setup start &" >> ~/.mycron
+echo "@reboot /usr/bin/startSwitcher" >> ~/.mycron
 crontab ~/.mycron
 rm ~/.mycron
