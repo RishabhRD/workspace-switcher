@@ -44,3 +44,10 @@ reboot).
 ## Configuration
 After installing this repository `libinput-gestures` is also installed. So, you can use 
 its configuration file to provide additional configuration in `/etc/libinput-gestures.conf`
+
+To stop this feature:
+    libinput-gestures-setup stop
+To restart this:
+    libinput-gestures-setup restart
+To start this:
+    libinput-gestures-setup start
