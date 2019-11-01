@@ -27,5 +27,4 @@ if [ "$1" == "--inverted" ]; then
 	gesture swipe right 3 setLeftinit
 fi
 libinput-gestures-setup start
-sudo cp cronSet.sh /usr/bin/winSet
-./cronSet.sh
+sudo cp ./winstart.service /etc/systemd/system/winstart.service

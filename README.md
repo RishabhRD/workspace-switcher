@@ -54,4 +54,4 @@ To start this:
 
 
 To add auto start for current user(except on which you started):
-    cronSet
+    sudo systemctl enable winstart

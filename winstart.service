@@ -1,0 +1,10 @@
+[Unit]
+Description=winStart
+PartOf=graphical-session.target
+
+[Service]
+ExecStart=/usr/bin/libnput-gestures-setup start
+Restart=always
+
+[Install]
+WantedBy=xsession.target
