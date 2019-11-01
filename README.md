@@ -30,8 +30,10 @@ Install this software:
     cd workspace-switcher
 If `libinput-gestures` is not installed:
     ./install.sh
+
 **If `libinput-gestures` is already installed(and you are using its configuration file):
 (if not using configuration file use above command only)**
+
     ./already_install.sh
 
 After executing the above command, **log out of your session
