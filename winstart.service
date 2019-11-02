@@ -3,8 +3,8 @@ Description=workspace-switcher
 PartOf=graphical-session.target
 
 [Service]
-ExecStart=DISPLAY=:0 /usr/bin/libinput-gestures
-Restart=always
+User=rishabh
+ExecStart=/usr/bin/workspace-switcher
 
 [Install]
 WantedBy=xsession.target
