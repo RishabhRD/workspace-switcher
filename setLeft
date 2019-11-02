@@ -1,2 +1,8 @@
-x=$(xdotool get_desktop)
-xdotool set_desktop $((x-1))
+curDesktop=$(xdotool get_desktop)
+numDesktop=$(xdotool get_num_desktops)
+if [ "$curDesktop" == "0" ]
+then
+	xdotool set_desktop $((numDesktop-1))
+else
+	xdotool set_desktop $((curDesktop-1))
+fi

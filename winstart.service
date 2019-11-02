@@ -1,9 +1,10 @@
 [Unit]
-Description=winStart
-After=xorg.target
+Description=workspace-switcher
+PartOf=graphical-session.target
 
 [Service]
-User=rishabh
-ExecStart=/usr/bin/libinput-gestures-setup start
-RemainAfterExit=false
-StandardOutput=journal
+ExecStart=DISPLAY=:0 /usr/bin/libinput-gestures
+Restart=always
+
+[Install]
+WantedBy=xsession.target
