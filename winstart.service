@@ -1,9 +1,0 @@
-[Unit]
-Description=winStart
-After=xorg.target
-
-[Service]
-User=rishabh
-ExecStart=/usr/bin/libinput-gestures-setup start
-RemainAfterExit=false
-StandardOutput=journal

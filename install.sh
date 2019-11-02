@@ -27,4 +27,4 @@ if [ "$1" == "--inverted" ]; then
 	gesture swipe right 3 setLeftinit
 fi
 libinput-gestures-setup start
-sudo cp ./winstart.service /etc/systemd/system/winstart.service
+libinput-gestures-setip autostart

@@ -11,4 +11,4 @@ else
 	sudo echo "gesture swipe right 3 setRightinit" >> /etc/libinput-gestures.conf
 fi
 libinput-gestures-setup start
-sudo cp ./winstart.service /etc/systemd/system/winstart.service
+libinput-gestures-setup autostart

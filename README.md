@@ -53,5 +53,7 @@ To start this:
     libinput-gestures-setup start
 
 
-To add auto start for current user(except on which you started):
-    sudo systemctl enable winstart
+Program should automatically work for each session in most of desktop environments.
+However, I don't gurantee its running for all desktop environments and window managers.
+For window manager it is not running automatically you need to add `libinput-gestures`
+to autostart script according to your window manager/desktop environment

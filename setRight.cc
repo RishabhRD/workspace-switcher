@@ -2,5 +2,5 @@
 #include <string>
 using namespace std;
 int main(){
-	system("setRight");
+	system("xdotool set_desktop --relative 1");
 }
