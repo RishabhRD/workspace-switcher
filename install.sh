@@ -26,4 +26,4 @@ if [ "$1" == "--inverted" ]; then
 	sudo mv .tmp /etc/libinput-gestures.conf
 fi
 libinput-gestures-setup start
-libinput-gestures-setip autostart
+libinput-gestures-setup autostart
